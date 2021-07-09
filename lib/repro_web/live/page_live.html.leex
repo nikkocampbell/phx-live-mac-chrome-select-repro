@@ -1,0 +1,17 @@
+<div>
+  <select>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+
+  <select>
+    <%= for i <- [1,2,3] do %>
+      <option value="i">i</option>
+    <% end %>
+  </select>
+
+  <%= if @time == nil, do: "nil" %>
+
+  <%#= @time %>
+</div>
